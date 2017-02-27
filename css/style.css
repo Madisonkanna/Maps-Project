@@ -3,10 +3,9 @@
 	position: relative;
 }
 
-html, body, main {
+html, body {
 	height: 100%;
-	width: 100%;
-	margin: 0;
+	maring: 0;
 	padding: 0;
 }
 
@@ -56,33 +55,21 @@ h1 {
 
 }
 
-nav {
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  -webkit-transform: translate(-300px, 0);
-  transform: translate(-300px, 0);
-  transition: transform 0.3s ease;
-}
-nav.open {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
+  
 }
 
-@media screen and (min-width: 600px) {
-	nav {
-		position: relative;
-		transform: translate(0, 0);
-	}
-	body {
-		display: flex;
-		flex-flow: row nowrap;
-	}
-	main {
-		width: auto;
-		flex-grow: 1;
-	}
+
+.form-container {
+	margin-top: 20px;
+	margin-left: 50px;
+
 }
+
+#pano {
+    width: 200px;
+    height: 200px;
+}
+
 
 
 
