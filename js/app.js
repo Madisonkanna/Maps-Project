@@ -116,6 +116,12 @@
                     toggleBounce(this, marker);
                 })  
 
+        menu.addEventListener('click', function(e) {
+  drawer.classList.toggle('open');
+  e.stopPropagation();
+});
+
+
 
             }
 
@@ -251,8 +257,6 @@ var ViewModel = function() {
     self.searchItem.subscribe(self.markerFilter);
 
 }
-
-
 
 
 
