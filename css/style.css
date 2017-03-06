@@ -47,6 +47,7 @@ h1 {
 .landmarkList {
 
   overflow: hidden;
+  margin-left: 20px;
   margin-right: 50px;
   background-color: #ffffff;
   border: 1px solid #D3D3D3;
