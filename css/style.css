@@ -31,7 +31,7 @@ h1 {
 .sidebar {
 	position: absolute;
 	background-image: url(capital.jpg);
-	border: 2px solid #D3D3D3;
+	border: 3px solid #D3D3D3;
 	height: 100%;
 	line-height: 35px;
 	padding: 5px 5 px 5px 5px;
