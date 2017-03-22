@@ -3,9 +3,10 @@
 	position: relative;
 }
 
-html, body {
+html, body, main {
 	height: 100%;
-	maring: 0;
+	width: 100%;
+	margin: 0;
 	padding: 0;
 }
 
