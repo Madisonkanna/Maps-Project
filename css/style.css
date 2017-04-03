@@ -1,6 +1,5 @@
 .container{
-	height: 100%;
-	position: relative;
+
 }
 
 html, body, main {
@@ -42,11 +41,11 @@ h1 {
 
 .search{
 	margin-left: 100px;
+	width: 100%;
 }
 
 
 .landmarkList {
-
   overflow: hidden;
   margin-left: 20px;
   margin-right: 50px;

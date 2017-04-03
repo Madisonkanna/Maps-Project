@@ -9,7 +9,7 @@
     </head>
     <!--Created a container holding my sidebar and map-->
     <body>
-        <div class="container">
+        <div class="container" data-bind="css: {'hidden-navbar': navbarVisible}">
             <div class="sidebar">
                 <h1>Sacramento Landmarks</h1>
                 <div class="search">
@@ -22,7 +22,7 @@
 
             </div>
             <div class="map" id="map"></div>
-
+            <div class="toggle-button" data-bind="click: toggleNavbar"></div>
         </div>
 
  
@@ -41,6 +41,7 @@
     </script>
 
 </html>
+
 
 
 
