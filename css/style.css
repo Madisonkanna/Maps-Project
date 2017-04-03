@@ -27,6 +27,7 @@ h1 {
 	position: absolute;
 	height: 100%;
 	right: 0px;
+	transition: all .5s;
 }
 
 .sidebar {
@@ -38,15 +39,16 @@ h1 {
 	padding: 5px 5 px 5px 5px;
 	text-align: left;
 	width: 345px;
+	transition: all .5s;
 }
 
 .search{
 	margin-left: 100px;
-	width: 100%;
 }
 
 
 .landmarkList {
+
   overflow: hidden;
   margin-left: 20px;
   margin-right: 50px;
@@ -57,6 +59,8 @@ h1 {
 
 }
 
+  
+}
 
 
 .form-container {
