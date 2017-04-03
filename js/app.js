@@ -250,10 +250,12 @@ var ViewModel = function() {
     self.searchItem.subscribe(self.searchFilter);
     self.searchItem.subscribe(self.markerFilter);
 
+    self.navbarVisible = ko.observable(true);
+
+    self.toggleNavbar = function() {
+        self.navbarVisible(!self.navbarVisible());
+    }
+
 }
-
-
-
-
 
 
