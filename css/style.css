@@ -65,5 +65,29 @@ h1 {
 
 }
 
+#pano {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 900px) {
+	.toggle-button {
+		width: 40px;
+		height: 40px;
+		background-color: #000;
+		z-index: 999;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
+	}
+
+	.hidden-navbar #map {
+		left: 0;
+		width: 100%;
+		z-index: 997;
+		transition: all .5s;
+	}
+}
 
 
