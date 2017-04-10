@@ -1,7 +1,7 @@
 # Udacity Neighborhood Map: Project 5
 
 How to view this project:
-1) View here
+1) View here: https://madisonkanna.github.io/Maps-Project/
 2) Clone the repo to your local machine
 
 This is an interactive web app that allows you to search for the historic landmarks of Sacramento. 
