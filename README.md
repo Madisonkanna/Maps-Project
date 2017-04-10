@@ -9,7 +9,7 @@ This is an interactive web app that allows you to search for the historic landma
 This project is built using Google Maps API. Wiki API.
 Utilizes the knockoutjs framework. 
 
-#Features:
+# Features:
 A map using the Google Maps API.
 Map markers identifying many historical landmarks of Sacramento.
 Search bar functionality
