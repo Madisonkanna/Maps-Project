@@ -1,6 +1,7 @@
 //Define global map and markers variables
             var map;
             var markers = [];
+            var viewModel;
             //Our view, locations that we'll display
             var locations = [{
                 title: "California State Capital Museum",
@@ -186,9 +187,9 @@
                 }, 500);
                 
             }
-
+            viewModel = new ViewModel();
             //Apply bindings so model will update when events are clicked
-            ko.applyBindings(new ViewModel());
+            ko.applyBindings(viewModel);
 
             }
 
@@ -233,6 +234,37 @@ var ViewModel = function() {
         }
     }
     
+    self.change = ko.observable('');
+    self.writeSomething = ko.computed(function() {
+        console.log('Changed!', self.change());
+
+
+    });
+
+    self.filteredLandmarks = ko.computed(function(){
+        var searchItem = self.searchItem().toLowerCase();
+        //console.log(searchItem);
+        if (searchItem) {
+            return ko.utils.arrayFilter(self.landmarkList(), function(landmark){
+                var title = landmark.title.toLowerCase();
+                var match = title.indexOf(searchItem) >= 0; //true or false
+                //console.log(title, searchItem, match); 
+                console.log(landmark.marker);
+                landmark.marker.setVisible(match); //true or false
+
+
+                return match;
+            });
+
+        }
+        else {
+            return self.landmarkList();
+
+        }
+
+
+
+    }); 
 
     self.markerFilter = function(value) {
         for (var i in locations) {
@@ -247,8 +279,8 @@ var ViewModel = function() {
 
 
     //Couple our search items with our search/marker filter functions
-    self.searchItem.subscribe(self.searchFilter);
-    self.searchItem.subscribe(self.markerFilter);
+    //self.searchItem.subscribe(self.searchFilter);
+    //self.searchItem.subscribe(self.markerFilter);
 
     self.navbarVisible = ko.observable(true);
 

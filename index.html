@@ -16,7 +16,7 @@
                     <input type="text" name="search" placeholder="Search!" autocomplete='off' data-bind='textInput: searchItem'>
                 </div>
 
-                <ul id="list"data-bind="foreach: landmarkList">
+                <ul id="list"data-bind="foreach: filteredLandmarks">
                     <li class='landmarkList'data-bind="text: title, click: $parent.clickedListMarkers"></li>
                 </ul>
 
